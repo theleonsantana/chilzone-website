@@ -1,0 +1,88 @@
+
+# MT Plesk artifacts #
+######################
+plesk-stat
+test
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+#*.gz
+*.tgz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+#netbeans#
+##########
+nbproject/
+/nbproject/private/
+
+# WordPress files #
+###################
+.htaccess
+local-config.php
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/wfcache
+wp-content/plugins/iwp/
+wp-content/plugins/wordfence/
+wp-content/plugins/wordfence/tmp/configCache.php
+wp-content/plugins/wp-migrate-pro/
+sitemap.xml
+*.log
+wp-content/cache/
+wp-content/backups/
+wp-content/wfcache/
+wp-content/uploads/backwpup*
+sitemap.xml.gz
+
+# Themes that don't need to be in the repo
+###############################################
+wp-content/themes/classic/
+wp-content/themes/default/
+wp-content/themes/twentyeleven/
+wp-content/themes/twentyfifteen/
+wp-content/themes/twentyfourteen/
+wp-content/themes/twentyten/
+wp-content/themes/twentythirteen/
+wp-content/themes/twentytwelve/
+wp-content/themes/twentysixteen/
+
+#npm#
+wp-content/themes/*/node_modules/
+
+#bower#
+wp-content/themes/*/bower_components/
+
+#angular plugin mods#
+wp-content/themes/*/js/app/plugins-mod/src/*/demo/
+wp-content/themes/*/js/app/plugins-mod/src/*/node_modules/
+wp-content/themes/*/js/app/plugins-mod/src/*/test/
