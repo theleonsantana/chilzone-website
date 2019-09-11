@@ -39,7 +39,7 @@ body {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: pink;
+    background-color: #ec4f30;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -55,7 +55,7 @@ body {
 }
 
 .site-header {
-    padding-top: 1px;
+    padding-top: 0;
 }
 
 .site-logo {
