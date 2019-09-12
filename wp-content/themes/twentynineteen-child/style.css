@@ -19,7 +19,10 @@
 body { 
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: aliceblue;
+}
+
+body.page .main-navigation {
+    font-size: 1.5em;
 }
 
 .main-navigation .main-menu > li > a {

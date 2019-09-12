@@ -62,12 +62,17 @@ function custom_post_type() {
 }
 add_action( 'init', 'custom_post_type', 0 );
 
-function company_customlogo() {
+
+function theme_prefix_setup() {
+	
 	add_theme_support( 'custom-logo', array(
-		 'width'       => 2084,
 		'height'      => 1250,
+		'width'       => 2084,
+		'flex-width' => true,
 	) );
+
 }
-add_action( 'after_setup_theme', 'company_customlogo', 11 );
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
 
 ?>
