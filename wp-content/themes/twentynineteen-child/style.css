@@ -16,6 +16,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,900&display=swap');
 
+#page {
+    background-color: green;
+}
+
 body { 
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -165,4 +169,8 @@ h5 {
     width: 100%;
     height: auto;
 
+}
+
+svg.svg-icon {
+    display: none;
 }
