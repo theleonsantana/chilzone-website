@@ -41,7 +41,7 @@
 }
 
 .logo-container {
-  width: 960px;
+  width: 450px;
   margin: 0 auto;
   background: linear-gradient(-45deg, #fc1684, #2766fb, #b22ef9, #fc1684);
   background-size: 400% 400%;
@@ -146,14 +146,6 @@ h5 {
 
 .site-header {
   padding-top: 0;
-}
-
-.site-title {
-  display: none;
-}
-
-.site-description {
-  display: none;
 }
 
 .site-content {
