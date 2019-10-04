@@ -50,6 +50,9 @@
   animation: Gradient 5s ease infinite;
   display: flex;
 }
+.logo-container a {
+  display: flex;
+}
 .logo-container img {
   width: 100%;
 }
