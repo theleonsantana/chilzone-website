@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #4e4d4e;
+	text-transform: uppercase;
+	font-family: 'Roboto 900', sans-serif;
+}
+
+h4 {
+	color: #ec4f30;
+	font-family: 'Nunito', sans-serif;
+}
+
+h5 {
+	color: #322e30;
+}
+
+.site-header {
+	padding-top: 0;
+}
+
+.site-title {
+	display: none;
+}
+
+.site-description {
+	display: none;
+}
+
+.site-content {
+	margin: auto;
+	width: 90%;
+	height: auto;
+	background-color: white;
+}
+
+.main-navigation .main-menu > li > a {
+	color: #4e4d4e;
+	font-size: 0.6em;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 5%;
+	list-style: none;
+	display: -webkit-flex; /* Safari */
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.vision-container {
+	text-align: center;
+	list-style: none;
+}
+
+.wp-block-embed {
+	width: 75%;
+}
+
+.items {
+	width: 400px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+.wp-block-image {
+	text-align: center;
+}
+
+#colophon .site-info {
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	background: #8f39bc;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}

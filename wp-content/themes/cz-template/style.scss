@@ -1,0 +1,28 @@
+/*
+ Theme Name:   cz-template
+ Theme URI:    http://example.com/twenty-nineteen-child/
+ Description:  Twenty Nineteen Child Theme
+ Author:       The Glimpse Group
+ Author URI:   http://theglimpsegroup.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  cz-template
+*/
+
+// Variables
+@import 'scss/variables/site-variables';
+
+// Reset
+//@import 'scss/reset';
+
+// Animated Logo
+@import 'scss/logo';
+
+// Navigation
+@import 'scss/navigation';
+
+// Global Styles
+@import 'scss/global-styles';
