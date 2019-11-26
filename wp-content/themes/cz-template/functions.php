@@ -6,4 +6,9 @@ function cz_template_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'cz_template_enqueue_styles');
 
+// Menu
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'cz-template' ),
+) );
+
 ?>

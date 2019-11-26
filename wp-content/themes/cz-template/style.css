@@ -19,13 +19,6 @@
   position: relative;
   right: 0;
 }
-
-.site-logo .custom-logo-link:hover,
-.site-logo .custom-logo-link:active,
-.site-logo .custom-logo-link:focus {
-  box-shadow: none;
-}
-
 .site-logo .custom-logo-link {
   width: 400px;
   height: auto;
@@ -34,6 +27,9 @@
   display: flex;
   transition: none;
   margin: auto;
+}
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+  box-shadow: none;
 }
 
 .site-branding {
@@ -92,6 +88,7 @@
 }
 body.page .main-navigation {
   font-size: 1.5em;
+  text-align: center;
 }
 
 .main-navigation .main-menu > li > a {
