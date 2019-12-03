@@ -22,11 +22,11 @@
 			<header class="header clear" role="banner">
 
 					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/icons8-moon-64.png" alt="Logo" class="logo-img">
-						</a>
-					</div>
+					<div class="logo-container">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                            <img src="<?php bloginfo('stylesheet_directory')?>/images/CZ-Logo-ColorSteeps-02.png" alt="main-chilzone-logo-heartbulb" />
+                        </a>
+                    </div>
 					<!-- /logo -->
 
 					<!-- nav -->

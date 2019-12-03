@@ -1,0 +1,204 @@
+/*
+Theme Name:     ChilZone Theme 
+Theme URI:      http://web3.joeunander.com/
+Description:    The custom theme I am making in class in order to demonstrate key WordPress concepts.
+Author:         Joe Unander
+Author URI:     https://early-adopter.com/
+Version:        0.0.1
+-------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,900&display=swap");
+.site-logo {
+  margin-bottom: 0;
+  position: relative;
+  right: 0;
+}
+.site-logo .custom-logo-link {
+  width: 400px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  transition: none;
+  margin: auto;
+}
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+  box-shadow: none;
+}
+
+.site-branding {
+  text-align: center;
+}
+
+.logo-container {
+  width: 450px;
+  margin: 0 auto;
+  background: linear-gradient(-45deg, #fc1684, #2766fb, #b22ef9, #fc1684);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+  display: flex;
+}
+.logo-container a {
+  display: flex;
+}
+.logo-container img {
+  width: 100%;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body.page .main-navigation {
+  font-size: 1.5em;
+}
+
+.main-navigation .main-menu > li > a {
+  text-decoration: none;
+  position: relative;
+  padding: 10px;
+}
+
+.main-navigation .main-menu > li > a:hover {
+  color: black;
+}
+
+.main-navigation .main-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ec4f30;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-bottom: 5px;
+}
+
+.main-navigation .main-menu > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #4e4d4e;
+  text-transform: uppercase;
+  font-family: "Roboto 900", sans-serif;
+}
+
+h4 {
+  color: #ec4f30;
+  font-family: "Nunito", sans-serif;
+}
+
+h5 {
+  color: #322e30;
+}
+
+.site-header {
+  padding-top: 0;
+}
+
+.site-content {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+}
+
+.main-navigation .main-menu > li > a {
+  color: #4e4d4e;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 5%;
+  list-style: none;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.vision-container {
+  text-align: center;
+  list-style: none;
+}
+
+.wp-block-embed {
+  width: 75%;
+}
+
+.items {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.wp-block-image {
+  text-align: center;
+}
+
+#colophon .site-info {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background: #8f39bc;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
