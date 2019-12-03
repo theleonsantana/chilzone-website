@@ -1,5 +1,16 @@
 body.page .main-navigation {
 	font-size: 1.5em;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.main-menu {
+	list-style: none;
+	padding-inline-start: 0;
+}
+
+.main-menu li {
+	display: inline-block;
 }
 
 .main-navigation .main-menu > li > a {

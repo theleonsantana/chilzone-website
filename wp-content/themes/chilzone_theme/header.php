@@ -16,7 +16,7 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="wrapper container">
 
 			<!-- header -->
 			<header class="header clear" role="banner">
@@ -30,9 +30,14 @@
 					<!-- /logo -->
 
 					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<p>Nav Coming Soon</p>
-					</nav>
+                    <nav id="site-navigation" class="main-navigation">
+                        <?php
+                        wp_nav_menu( array(
+                            'theme_location'  => 'primary',
+                            'menu_class'     => 'main-menu',
+                        ))
+                        ?>
+                    </nav>
 					<!-- /nav -->
 
 			</header>

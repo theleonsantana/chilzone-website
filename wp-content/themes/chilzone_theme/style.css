@@ -83,6 +83,17 @@ Version:        0.0.1
 }
 body.page .main-navigation {
   font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-menu {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.main-menu li {
+  display: inline-block;
 }
 
 .main-navigation .main-menu > li > a {
@@ -154,21 +165,6 @@ h5 {
   font-size: 0.6em;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-}
-
-.container {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 5%;
-  list-style: none;
-  display: -webkit-flex;
-  /* Safari */
-  -webkit-flex-wrap: wrap;
-  /* Safari 6.1+ */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .vision-container {

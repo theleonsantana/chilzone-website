@@ -32,3 +32,10 @@ function web3_enqueues()
 }
 
 add_action('wp_enqueue_scripts', 'web3_enqueues', 20);
+
+// Menus
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'chilzone-theme' ),
+    'secondary' => __('Footer Menu', 'chilzone-theme'),
+    'social' => __('Social Media Menu', 'chilzone-theme')
+) );
