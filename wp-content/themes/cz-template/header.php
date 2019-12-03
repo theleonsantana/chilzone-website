@@ -21,10 +21,7 @@
 
 			<div class="site-branding-container">
                 <?php get_template_part( 'template-parts/cz-brand' )?>
-
-				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 			</div><!-- .site-branding-container -->
-
 			<?php if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
 				<div class="site-featured-image">
 					<?php
