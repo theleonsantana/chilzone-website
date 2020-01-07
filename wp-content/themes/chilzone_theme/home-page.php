@@ -2,6 +2,24 @@
 
 <?php get_header();?>
 
+
+<div class="container-fluid">
+    <div class="row">
+
+        <?php
+        $hero_image = get_field('hero_background_image');
+
+        if( $hero_image ): ?>
+
+            <div id="hero-image" style="background-image: url('<?php echo esc_url( $hero_image['url'] ); ?>')">
+                
+            </div>
+
+        <?php endif; ?>
+
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
@@ -9,36 +27,39 @@
                 <!-- section -->
                 <section>
 
-                   
-
-                    <?php if (have_posts()): while (have_posts()): the_post();?>
+                    <!-- <?php #if (have_posts()): while (have_posts()): the_post();?>
 
                     <!-- article -->
-                    <article id="post-<?php the_ID();?>" <?php post_class();?>>
+                    <!-- <article id="post-<?php #the_ID();?>" <?php #post_class();?>> -->
 
-                        <?php the_content();?>
+                        <?php # the_content();?>
 
-                    </article>
+                    <!-- </article> -->
                     <!-- /article -->
 
-                    <?php endwhile;?>
+                    <?php # endwhile;?>
 
-                    <?php else: ?>
+                    <?php # else: ?>
 
                     <!-- article -->
-                    <article>
+                    <!-- <article> -->
 
-                        <h2>
-                            <?php _e('Sorry, no page content at this time.', 'textdomain');?>
-                        </h2>
+                        <!-- <h2> -->
+                            <?php #_e('Sorry, no page content at this time.', 'textdomain');?>
+                        <!-- </h2> -->
 
-                    </article>
+                    <!-- </article> -->
                     <!-- /article -->
 
-                    <?php endif;?>
+                    <?php # endif;?>
 
-                </section>
+                <!-- </section> -->
                 <!-- /section -->
+
+                <!-- MAIN CONTENT FROM THE TEMPLATE -->
+                
+
+
             </main>
         </div>
         <!-- <div class="col-sm-3">

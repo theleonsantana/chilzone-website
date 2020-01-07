@@ -197,6 +197,15 @@ h5 {
   height: auto;
 }
 
+#hero-image {
+  background-color: #000;
+  background-image: url(texture.png), url(banner.png);
+  background-position: center center, center top;
+  background-repeat: repeat, no-repeat;
+  width: 100%;
+  height: 80vh;
+}
+
 .footer .copyright {
   font-family: "Nunito", sans-serif;
   text-align: center;
