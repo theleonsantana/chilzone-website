@@ -197,4 +197,9 @@ h5 {
   height: auto;
 }
 
+.footer .copyright {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

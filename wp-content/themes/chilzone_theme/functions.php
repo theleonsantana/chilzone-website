@@ -39,3 +39,35 @@ register_nav_menus( array(
     'secondary' => __('Footer Menu', 'chilzone-theme'),
     'social' => __('Social Media Menu', 'chilzone-theme')
 ) );
+
+
+
+
+function wpse242371_remove_editor_from_some_pages()
+{
+    global $post;
+
+    if( ! is_a($post, 'WP_Post') ) {
+        return;
+    }
+
+
+    /* basename is used for templates that are in the subdirectory of the theme */
+    $current_page_template_slug = basename( get_page_template_slug($post_id) );
+
+    /* file names of templates to remove the editor on */
+    $excluded_template_slugs = array(
+        'home-page.php',
+    );
+
+    if( in_array($current_page_template_slug, $excluded_template_slugs) ) {
+        /* remove editor from pages */
+        remove_post_type_support('page', 'editor');
+        /* if needed, add posts or CPTs to remove the editor on */
+        // remove_post_type_support('post', 'editor');
+        // remove_post_type_support('movies', 'editor');
+    }
+
+}
+
+add_action('admin_enqueue_scripts', 'wpse242371_remove_editor_from_some_pages');
