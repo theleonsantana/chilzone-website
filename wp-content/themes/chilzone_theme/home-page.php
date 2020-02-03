@@ -45,10 +45,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-12 home-video">
             <?php the_field('home_page_video'); ?>
         </div>
     </div>
+</div>
+<div class="container-fluid">
+    <img class="upper-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8.svg" alt="">
     <div class="row">
         <div class="col-sm-7">
             <h3><?php the_field('our_vision_headline')?></h3>
@@ -66,6 +69,9 @@
         <?php endif; ?>
         </div>
     </div>
+    <img class="lower-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8copy.svg" alt="">
+</div>
+<div class="container">
     <div class="row">
         <div class="col-sm-12">
         <?php 
