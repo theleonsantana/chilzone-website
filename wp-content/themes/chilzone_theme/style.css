@@ -197,6 +197,15 @@ h5 {
         border: 4px solid white;
         color: white; }
 
+.home-quote-container {
+  margin: 10% 0; }
+  .home-quote-container .home-quote, .home-quote-container .quote-cite {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 1.5em; }
+  .home-quote-container .quote-cite {
+    text-align: right; }
+
 .footer .copyright {
   font-family: 'Nunito', sans-serif;
   text-align: center; }

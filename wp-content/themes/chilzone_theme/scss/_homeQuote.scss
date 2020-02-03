@@ -1,0 +1,12 @@
+.home-quote-container {
+	margin: 10% 0;
+	.home-quote {
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 900;
+		font-size: 1.5em;
+	}
+	.quote-cite {
+		@extend .home-quote;
+		text-align: right;
+	}
+}

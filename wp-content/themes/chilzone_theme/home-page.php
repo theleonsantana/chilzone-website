@@ -28,15 +28,19 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-8">
+    <div class="row justify-content-center home-quote-container">
+        <div class="col-sm-6">
             <?php
-            $home_quote = get_field('home_quote');
+            $home_quote = get_field('home_quote', false, false);
             $author_quote = get_field('author_quote')
             ?>
-            <?php echo $home_quote?>
+            <?php if($home_quote): ?>
+                <p class="home-quote">
+                    "<?php echo $home_quote?>"
+                </p>
+            <?php endif;?>
         <?php if($author_quote): ?>
-            <cite>- <?php echo $author_quote?></cite>
+            <p class="quote-cite">- <?php echo $author_quote?></p>
         <?php endif; ?>
         </div>
     </div>
