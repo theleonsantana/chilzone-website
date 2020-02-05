@@ -50,27 +50,29 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <img class="upper-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8.svg" alt="">
-    <div class="row">
-        <div class="col-sm-7">
-            <h3><?php the_field('our_vision_headline')?></h3>
-            <?php echo the_field('our_vision_content')?>
-        </div>
-        <div class="col-sm-5">
-        <?php if( have_rows('images_in_our_vision') ): ?>
-        <?php while( have_rows('images_in_our_vision') ): the_row(); 
-                // Get sub field values.
-                $image = get_sub_field('single_our_vision_image'); ?>
-                <div>
-                    <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-                </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
+<img class="upper-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8.svg" alt=""/>
+<div class="container-fluid our-vision-container">
+    <div class="container our-vision">
+        <div class="row">
+            <div class="col-sm-5">
+                <h3><?php the_field('our_vision_headline')?></h3>
+                <?php echo the_field('our_vision_content')?>
+            </div>
+            <div class="col-sm-7">
+            <?php if( have_rows('images_in_our_vision') ): ?>
+            <?php while( have_rows('images_in_our_vision') ): the_row(); 
+                    // Get sub field values.
+                    $image = get_sub_field('single_our_vision_image'); ?>
+                    <div>
+                        <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            </div>
         </div>
     </div>
-    <img class="lower-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8copy.svg" alt="">
 </div>
+<img class="lower-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8copy.svg" alt=""/>
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
