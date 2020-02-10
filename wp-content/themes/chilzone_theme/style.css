@@ -118,9 +118,6 @@ h5 {
 .site-header {
   padding-top: 0; }
 
-.wrapper {
-  margin-top: 70px; }
-
 .site-content {
   margin: auto;
   width: 90%;
@@ -365,5 +362,7 @@ h5 {
     text-align: center;
     color: white;
     margin-bottom: 0; }
+  .footer .nf-form-hp {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
