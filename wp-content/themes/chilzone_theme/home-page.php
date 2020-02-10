@@ -90,54 +90,56 @@
         <div class="col-sm-12">
             <h3>Our Values</h3>    
         </div>
-        <div class="col-sm-4">
-            <?php if( have_rows('first_value') ): ?>
-            <?php while( have_rows('first_value') ): the_row(); 
-                    // Get sub field values.
-                    $icon = get_sub_field('first_icon'); 
-                    $headline = get_sub_field('first_value_headline');
-                    $content = get_sub_field('first_value_content');
-                    ?>
-                    <div>
-                        <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-                        <h4><?php echo $headline?></h4>
-                        <?php echo $content?>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
-        <div class="col-sm-4">
-            <?php if( have_rows('second_value') ): ?>
-            <?php while( have_rows('second_value') ): the_row(); 
-                    // Get sub field values.
-                    $icon = get_sub_field('second_icon'); 
-                    $headline = get_sub_field('second_value_headline');
-                    $content = get_sub_field('second_value_content');
-                    ?>
-                    
-                    <div>
-                        <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-                        <h4><?php echo $headline?></h4>
-                        <?php echo $content?>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div>
-        <div class="col-sm-4">
-            <?php if( have_rows('third_value') ): ?>
-            <?php while( have_rows('third_value') ): the_row(); 
-                    // Get sub field values.
-                    $icon = get_sub_field('third_icon'); 
-                    $headline = get_sub_field('third_value_headline');
-                    $content = get_sub_field('third_value_content');
-                    ?>
-                    <div>
-                        <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
-                        <h4><?php echo $headline?></h4>
-                        <?php echo $content?>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
+        <div class="items-container">
+          <div class="col-sm-4">
+              <?php if( have_rows('first_value') ): ?>
+              <?php while( have_rows('first_value') ): the_row(); 
+                      // Get sub field values.
+                      $icon = get_sub_field('first_icon'); 
+                      $headline = get_sub_field('first_value_headline');
+                      $content = get_sub_field('first_value_content');
+                      ?>
+                      <div>
+                          <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+                          <h4><?php echo $headline?></h4>
+                          <?php echo $content?>
+                      </div>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+          </div>
+          <div class="col-sm-4">
+              <?php if( have_rows('second_value') ): ?>
+              <?php while( have_rows('second_value') ): the_row(); 
+                      // Get sub field values.
+                      $icon = get_sub_field('second_icon'); 
+                      $headline = get_sub_field('second_value_headline');
+                      $content = get_sub_field('second_value_content');
+                      ?>
+                      
+                      <div>
+                          <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+                          <h4><?php echo $headline?></h4>
+                          <?php echo $content?>
+                      </div>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+          </div>
+          <div class="col-sm-4">
+              <?php if( have_rows('third_value') ): ?>
+              <?php while( have_rows('third_value') ): the_row(); 
+                      // Get sub field values.
+                      $icon = get_sub_field('third_icon'); 
+                      $headline = get_sub_field('third_value_headline');
+                      $content = get_sub_field('third_value_content');
+                      ?>
+                      <div>
+                          <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" />
+                          <h4><?php echo $headline?></h4>
+                          <?php echo $content?>
+                      </div>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+          </div>
         </div>
     </div>
     <div class="row">

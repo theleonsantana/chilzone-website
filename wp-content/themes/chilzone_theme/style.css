@@ -7,7 +7,7 @@ Author URI:     https://early-adopter.com/
 Version:        0.0.1
 -------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,900&display=swap");
 .site-logo {
   margin-bottom: 0;
@@ -111,10 +111,6 @@ h1 {
   color: #4e4d4e;
   text-transform: uppercase;
   font-family: 'Roboto 900', sans-serif; }
-
-h4 {
-  color: #ec4f30;
-  font-family: 'Nunito', sans-serif; }
 
 h5 {
   color: #322e30; }
@@ -257,6 +253,33 @@ h5 {
   font-style: italic;
   color: #3c3c3c;
   text-align: right; }
+
+.our-values-container {
+  margin-top: 80px; }
+  .our-values-container h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase; }
+  .our-values-container .items-container {
+    margin: 5% 0 10%;
+    display: flex; }
+    .our-values-container .items-container img {
+      justify-content: center;
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 35%; }
+    .our-values-container .items-container h4 {
+      color: #ec4f30;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 20px; }
+    .our-values-container .items-container p {
+      padding: 0 40px; }
 
 .footer .copyright {
   font-family: 'Nunito', sans-serif;
