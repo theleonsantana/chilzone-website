@@ -52,9 +52,9 @@
 </div>
 <img class="upper-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8.svg" alt=""/>
 <div class="container-fluid our-vision-container">
-    <div class="container our-vision">
-        <div class="row">
-            <div class="col-sm-5">
+    <div class="container  h-100 our-vision">
+        <div class="row align-items-center h-100">
+            <div class="col-sm-5 mx-auto">
                 <h3><?php the_field('our_vision_headline')?></h3>
                 <?php echo the_field('our_vision_content')?>
             </div>

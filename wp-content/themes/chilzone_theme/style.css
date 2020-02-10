@@ -202,7 +202,7 @@ h5 {
   .home-quote-container .home-quote, .home-quote-container .quote-cite {
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
-    font-size: 1.5em; }
+    font-size: 1.7em; }
   .home-quote-container .quote-cite {
     text-align: right; }
 
@@ -222,7 +222,7 @@ h5 {
     height: 100%; }
 
 .upper-shape {
-  width: 100%;
+  width: 101%;
   position: absolute;
   margin: 0 -30px 0 -15px; }
 
@@ -231,11 +231,20 @@ h5 {
   .our-vision-container .our-vision img {
     width: 100%;
     margin: 10% 0 5%; }
+  .our-vision-container .our-vision h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase; }
+  .our-vision-container .our-vision p {
+    font-size: 1.2em;
+    line-height: 30px; }
 
 .lower-shape {
   position: absolute;
   z-index: 1;
-  width: 110%;
+  width: 101%;
   margin: -373px -30px 0 -15px; }
 
 .footer .copyright {
