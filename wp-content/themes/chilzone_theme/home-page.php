@@ -73,8 +73,8 @@
     </div>
 </div>
 <img class="lower-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8copy.svg" alt=""/>
-<div class="container flavor-image-container">
-    <div class="row">
+<div class="container">
+    <div class="row flavor-image-container">
         <div class="col-sm-12">
         <?php 
         $experience_img = get_field('home_flavor_image');
@@ -142,7 +142,7 @@
           </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mid-banner-section">
         <?php
         $mid_banner_img = get_field('mid_banner_image');
         $mid_banner_headline = get_field('mid_headline');
@@ -150,14 +150,14 @@
         $mid_banner_button = get_field('mid_read_more');
 
         if( $mid_banner_img ): ?>
-            <div id="mid-banner" style="background-image: url('<?php echo esc_url( $mid_banner_img['url'] ); ?>')">  
-                <div class="container">
-                    <div class="row">
+            <div id="mid-banner" style="background-image: url('<?php echo esc_url( $mid_banner_img['url'] ); ?>'); height: <?php echo $mid_banner_img['sizes']['large-height'] ?>px;">  
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
                     <div class="col-sm-5 helper-position">
-                        <div class="hero-container">
+                        <div>
                             <h4 class="tagline"><?php echo $mid_banner_headline;?></h4>
                             <p class="hero-content"><?php echo $mid_banner_content; ?></p>
-                            <a href="<?php echo esc_url( $mid_banner_button );?>">Read More</a>
+                            <a class="btn-style" href="<?php echo esc_url( $mid_banner_button );?>">Read More</a>
                         </div>
                     </div>
                     </div>

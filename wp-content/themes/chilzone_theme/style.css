@@ -281,6 +281,29 @@ h5 {
     .our-values-container .items-container p {
       padding: 0 40px; }
 
+.mid-banner-section #mid-banner {
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .mid-banner-section #mid-banner h4 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase; }
+  .mid-banner-section #mid-banner .btn-style {
+    background-color: #8f39bc;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 50px; }
+  .mid-banner-section #mid-banner .btn-style:hover {
+    background-color: #ec4f30; }
+
 .footer .copyright {
   font-family: 'Nunito', sans-serif;
   text-align: center; }
