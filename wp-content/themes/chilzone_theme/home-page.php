@@ -165,7 +165,7 @@
             </div>
         <?php endif; ?>
     </div>
-    <div class="row">
+    <div class="row partners-section">
         <div class="col-sm-12">
             <h3>Partners</h3>    
         </div>
@@ -178,23 +178,23 @@
         $partner_6 = get_field('partner_6');
         
         ?>
-        <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_1['url'] ); ?>" alt="<?php echo esc_attr( $partner_1['alt'] ); ?>" />
+        <div class="col-sm-2 ">
+          <div class="img-partner" style="background-image: url('<?php echo esc_url( $partner_1['url'] ); ?>');"></div>
         </div>
         <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_2['url'] ); ?>" alt="<?php echo esc_attr( $partner_2['alt'] ); ?>" />
+          <div class="img-partner" style="background-image: url('<?php echo esc_url( $partner_2['url'] ); ?>');"></div>
         </div>
         <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_3['url'] ); ?>" alt="<?php echo esc_attr( $partner_3['alt'] ); ?>" />
+          <div  class="img-partner" style="background-image: url('<?php echo esc_url( $partner_3['url'] ); ?>');"></div>
         </div>
         <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_4['url'] ); ?>" alt="<?php echo esc_attr( $partner_4['alt'] ); ?>" />
+          <div class="img-partner"  style="background-image: url('<?php echo esc_url( $partner_4['url'] ); ?>');"></div>
         </div>
         <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_5['url'] ); ?>" alt="<?php echo esc_attr( $partner_5['alt'] ); ?>" />
+          <div class="img-partner"  style="background-image: url('<?php echo esc_url( $partner_5['url'] ); ?>');"></div>
         </div>
         <div class="col-sm-2">
-            <img src="<?php echo esc_url( $partner_6['url'] ); ?>" alt="<?php echo esc_attr( $partner_6['alt'] ); ?>" />
+          <div class="img-partner"  style="background-image: url('<?php echo esc_url( $partner_6['url'] ); ?>');"></div>
         </div>
     </div>
 </div>

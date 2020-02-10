@@ -118,6 +118,9 @@ h5 {
 .site-header {
   padding-top: 0; }
 
+.wrapper {
+  margin-top: 70px; }
+
 .site-content {
   margin: auto;
   width: 90%;
@@ -303,6 +306,21 @@ h5 {
     border-radius: 50px; }
   .mid-banner-section #mid-banner .btn-style:hover {
     background-color: #ec4f30; }
+
+.partners-section {
+  margin: 10% 0; }
+  .partners-section h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase; }
+  .partners-section .img-partner {
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px 0; }
 
 .footer .copyright {
   font-family: 'Nunito', sans-serif;
