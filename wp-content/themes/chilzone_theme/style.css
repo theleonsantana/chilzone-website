@@ -221,7 +221,7 @@ h5 {
     height: 100%; }
 
 .upper-shape {
-  width: 101%;
+  width: 100%;
   position: absolute;
   margin: 100px -30px 0 -15px; }
 
@@ -243,7 +243,7 @@ h5 {
 .lower-shape {
   position: absolute;
   z-index: 1;
-  width: 101%;
+  width: 100%;
   margin: -373px -30px 0 -15px; }
 
 .flavor-image-container .flavor-image {
@@ -322,8 +322,47 @@ h5 {
     background-position: center;
     margin: 50px 0; }
 
-.footer .copyright {
-  font-family: 'Nunito', sans-serif;
-  text-align: center; }
+.bottom-transition {
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+  background: linear-gradient(-45deg, #fc1684, #2766fb, #b22ef9, #fc1684);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+  display: flex; }
+  .bottom-transition a {
+    display: flex; }
+  .bottom-transition img {
+    width: 100%; }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+.footer {
+  background-color: #8f39bc; }
+  .footer .copyright {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
-			<!-- footer -->
+      <!-- footer -->
+      <div class="bottom-transition"></div>
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->

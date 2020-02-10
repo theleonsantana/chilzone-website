@@ -1,6 +1,68 @@
+.bottom-transition {
+	width: 100%;
+	height: 20px;
+	margin: 0 auto;
+	// background: red;
+	// add this to the logo template to change the colors dynamically
+	background: linear-gradient(
+		-45deg,
+		rgb(252, 22, 132),
+		rgb(39, 102, 251),
+		rgb(178, 46, 249),
+		rgb(252, 22, 132)
+	);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
+	display: flex;
+	a {
+		display: flex;
+	}
+	img {
+		width: 100%;
+	}
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .footer {
+	background-color: $purple;
 	.copyright {
 		font-family: 'Nunito', sans-serif;
 		text-align: center;
+		margin-bottom: 0;
 	}
 }
