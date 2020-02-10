@@ -73,20 +73,20 @@
     </div>
 </div>
 <img class="lower-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8copy.svg" alt=""/>
-<div class="container">
+<div class="container flavor-image-container">
     <div class="row">
         <div class="col-sm-12">
         <?php 
         $experience_img = get_field('home_flavor_image');
         $experience_credits = get_field('experience_credits')
         ?>
-            <img src="<?php echo esc_url( $experience_img['url'] ); ?>" alt="<?php echo esc_attr( $experience_img['alt'] ); ?>"/>
+            <img src="<?php echo esc_url( $experience_img['url'] ); ?>" alt="<?php echo esc_attr( $experience_img['alt'] ); ?>" class="flavor-image"/>
         <?php if($experience_credits): ?>
-            <cite>- <?php echo $experience_credits?></cite>
+            <p class="flavor-img-quote">- <?php echo $experience_credits?></p>
         <?php endif; ?>
         </div>
     </div>
-    <div class="row">
+    <div class="row our-values-container">
         <div class="col-sm-12">
             <h3>Our Values</h3>    
         </div>

@@ -1,0 +1,14 @@
+.flavor-image-container {
+	.flavor-image {
+		width: 100%;
+		margin-top: 180px;
+	}
+	.flavor-img-quote {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 100;
+		font-size: 1.3em;
+		font-style: italic;
+		color: $quote-grey;
+		text-align: right;
+	}
+}
