@@ -60,7 +60,39 @@
 }
 .footer {
 	background-color: $purple;
+	padding: 20px 0;
+	.footer-logo-container {
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		img {
+			width: 50%;
+		}
+	}
+	.branding-footer {
+		display: flex;
+		display: -webkit-flex;
+		flex-flow: wrap;
+		-webkit-flex-flow: wrap;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		align-items: center;
+		-webkit-align-items: center;
+		margin-bottom: 30px;
+		img {
+			width: 150px;
+		}
+	}
+	.footer-heading {
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 900;
+		font-size: 1.3em;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+	}
 	.copyright {
+		margin-top: 30px;
 		font-family: 'Nunito', sans-serif;
 		text-align: center;
 		color: white;
@@ -68,5 +100,78 @@
 	}
 	.nf-form-hp {
 		display: none;
+	}
+}
+
+.menu-footer-container {
+	padding: 20px 0;
+	background-color: $footer-menu-grey;
+	.footer-menu {
+		.menu-item {
+			margin: 0 20px;
+			a {
+				font-family: 'Nunito', sans-serif;
+				color: white;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.nf-form-cont {
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	.nf-form-title {
+		display: none;
+	}
+	.nf-form-content label {
+		color: $cz-blue;
+	}
+	.nf-form-content input:not([type='button']) {
+		border: none;
+		border-bottom: 1px solid white;
+		background-color: transparent;
+		color: white;
+	}
+	.nf-form-content input:not([type='button']):focus {
+		border: none;
+		border-bottom: 1px solid white;
+		background-color: transparent;
+		color: white;
+	}
+	.nf-form-content textarea {
+		background-color: transparent;
+		resize: none;
+		color: white;
+	}
+	.nf-form-content textarea:focus {
+		background: transparent;
+		color: white;
+	}
+	.nf-form-content textarea.ninja-forms-field {
+		height: 170px;
+	}
+	.nf-form-content input[type='button'] {
+		background-color: $purple; /* Green */
+		border: none;
+		border: 4px solid $cz-blue;
+		color: $cz-blue;
+		padding: 10px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+		text-transform: uppercase;
+		border-radius: 50px;
+		outline: none;
+	}
+	.nf-form-content input[type='button']:hover {
+		background-color: $cz-blue;
+		border: 4px solid white;
+		color: white;
+	}
+	.nf-error .ninja-forms-field {
+		border-color: #e80000 !important;
+		transition: all 0.5s;
 	}
 }
