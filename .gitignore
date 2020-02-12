@@ -54,7 +54,9 @@ wp-content/wp-cache-config.php
 wp-content/wfcache
 wp-content/plugins/iwp/
 wp-content/plugins/wordfence/
-wp-content/plugins/wordfence/tmp/configCache.php
+wp-content/plugins/wordfence/
+wp-content/plugins/wp-migrate-db/
+tmp/configCache.php
 wp-content/plugins/wp-migrate-pro/
 sitemap.xml
 *.log
