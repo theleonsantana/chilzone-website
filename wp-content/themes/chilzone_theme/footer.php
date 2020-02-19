@@ -7,7 +7,7 @@
         
         <div class="col-sm-6 footer-logo-container">
           <img src="<?php bloginfo('stylesheet_directory')?>/images/ChilZone-logo.png" />
-          <div class="recent-post">
+          <div class="recent-post-container">
           <?php 
               // the query
               $the_query = new WP_Query( array(
@@ -17,16 +17,28 @@
 
             <?php if ( $the_query->have_posts() ) : ?>
               <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+              
+              <div class="recent-post">
 
-                <h3><?php the_title(); ?></h3>
+                <span class="recent-post-date"><?php echo get_the_date( 'M j, Y' ); ?></span>
+
+                <h3 class="recent-post-title"><?php the_title(); ?></h3>
                 <?php the_excerpt(); ?>
-                <a href="<?php echo get_the_permalink() ?>">Read More</a>
+                <a href="<?php echo get_the_permalink() ?>" class="recent-post-link-more">Read More</a>
+
+              </div>
 
               <?php endwhile; ?>
               <?php wp_reset_postdata(); ?>
 
             <?php else : ?>
-              <p>No News</p>
+
+            <div class="recent-post">
+
+              <h3 class="no-post-message">No Recent Post</h3>
+
+            </div>
+
             <?php endif; ?>
           </div>
         </div>
