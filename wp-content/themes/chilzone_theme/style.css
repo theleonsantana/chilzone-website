@@ -28,16 +28,12 @@ Version:        0.0.1
   text-align: center; }
 
 .logo-container {
-  width: 50%;
   margin: 0 auto;
   background: linear-gradient(-45deg, #fc1684, #2766fb, #b22ef9, #fc1684);
   background-size: 400% 400%;
   -webkit-animation: Gradient 5s ease infinite;
   -moz-animation: Gradient 5s ease infinite;
-  animation: Gradient 5s ease infinite;
-  display: flex; }
-  .logo-container a {
-    display: flex; }
+  animation: Gradient 5s ease infinite; }
   .logo-container img {
     width: 100%; }
 

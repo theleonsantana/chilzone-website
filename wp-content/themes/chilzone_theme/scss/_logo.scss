@@ -23,7 +23,7 @@
 }
 
 .logo-container {
-	width: 50%;
+	// width: 50%;
 	margin: 0 auto;
 	// background: red;
 	// add this to the logo template to change the colors dynamically
@@ -38,10 +38,6 @@
 	-webkit-animation: Gradient 5s ease infinite;
 	-moz-animation: Gradient 5s ease infinite;
 	animation: Gradient 5s ease infinite;
-	display: flex;
-	a {
-		display: flex;
-	}
 	img {
 		width: 100%;
 	}
