@@ -71,3 +71,8 @@ function wpse242371_remove_editor_from_some_pages()
 }
 
 add_action('admin_enqueue_scripts', 'wpse242371_remove_editor_from_some_pages');
+
+function wp_excerpt_length( $length ) {
+  return 30;
+}
+add_filter( 'excerpt_length', 'wp_excerpt_length');

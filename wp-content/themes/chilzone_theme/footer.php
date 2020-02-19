@@ -7,6 +7,28 @@
         
         <div class="col-sm-6 footer-logo-container">
           <img src="<?php bloginfo('stylesheet_directory')?>/images/ChilZone-logo.png" />
+          <div class="recent-post">
+          <?php 
+              // the query
+              $the_query = new WP_Query( array(
+                  'posts_per_page' => 3,
+              )); 
+            ?>
+
+            <?php if ( $the_query->have_posts() ) : ?>
+              <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                <h3><?php the_title(); ?></h3>
+                <?php the_excerpt(); ?>
+                <a href="<?php echo get_the_permalink() ?>">Read More</a>
+
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+
+            <?php else : ?>
+              <p>No News</p>
+            <?php endif; ?>
+          </div>
         </div>
 
         <div class="col-sm-6">
