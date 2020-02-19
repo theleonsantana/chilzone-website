@@ -392,6 +392,9 @@ h5 {
           text-decoration: underline; }
           .footer .footer-logo-container .recent-post-container .recent-post .recent-post-link-more:hover {
             color: #2ac8ac; }
+        .footer .footer-logo-container .recent-post-container .recent-post .no-post-message {
+          margin: 20px 0px;
+          color: white; }
   .footer .branding-footer {
     display: flex;
     display: -webkit-flex;
