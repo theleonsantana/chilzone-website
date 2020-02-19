@@ -58,13 +58,31 @@
         <?php 
           $yt_link = get_field('youtube_sm');
           if( $yt_link ): ?>
-              <a class="button" target="_blank" href="<?php echo esc_url( $yt_link ); ?>">Continue Reading</a>
+              <a class="yt_button" target="_blank" href="<?php echo esc_url( $yt_link ); ?>"><i class="fab fa-youtube"></i></a>
           <?php endif; ?>
 
           <?php 
           $fb_link = get_field('facebook_sm');
           if( $fb_link ): ?>
-              <a class="button" target="_blank" href="<?php echo esc_url( $fb_link ); ?>">Continue Reading</a>
+              <a class="fb_button" target="_blank" href="<?php echo esc_url( $fb_link ); ?>"><i class="fab fa-facebook-square"></i></a>
+          <?php endif; ?>
+
+          <?php 
+          $in_link = get_field('instagram_sm');
+          if( $in_link ): ?>
+              <a class="in_button" target="_blank" href="<?php echo esc_url( $in_link ); ?>"><i class="fab fa-instagram"></i></a>
+          <?php endif; ?>
+
+          <?php 
+          $li_link = get_field('linkedin_sm');
+          if( $li_link ): ?>
+              <a class="li_button" target="_blank" href="<?php echo esc_url( $li_link ); ?>"><i class="fab fa-linkedin"></i></a>
+          <?php endif; ?>
+
+          <?php 
+          $tw_link = get_field('twitter_sm');
+          if( $tw_link ): ?>
+              <a class="tw_button" target="_blank" href="<?php echo esc_url( $tw_link ); ?>"><i class="fab fa-twitter-square"></i></a>
           <?php endif; ?>
 
         </div>  
