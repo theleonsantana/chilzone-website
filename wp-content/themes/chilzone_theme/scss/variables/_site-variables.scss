@@ -3,7 +3,7 @@
 
 // media queries
 // using mixins
-$break-small: 320px;
+$break-small: 425px;
 $break-large: 1024px;
 
 @mixin respond-to($media) {

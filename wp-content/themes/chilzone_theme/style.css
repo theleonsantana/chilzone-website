@@ -37,7 +37,7 @@ Version:        0.0.1
   animation: Gradient 5s ease infinite; }
   .logo-container img {
     width: 100%; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     .logo-container {
       width: 80%; } }
 
