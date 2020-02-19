@@ -20,7 +20,7 @@
               
               <div class="recent-post">
 
-                <span class="recent-post-date"><?php echo get_the_date( 'M j, Y' ); ?></span>
+                <p class="recent-post-date"><?php echo get_the_date( 'M j, Y' ); ?></p>
 
                 <h3 class="recent-post-title"><?php the_title(); ?></h3>
                 <?php the_excerpt(); ?>
