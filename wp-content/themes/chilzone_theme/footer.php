@@ -52,7 +52,23 @@
           <?php
           echo do_shortcode( '[ninja_form id=1]' );
           ?>
-        </div>       
+
+        <div class="social-media-section">
+
+        <?php 
+          $yt_link = get_field('youtube_sm');
+          if( $yt_link ): ?>
+              <a class="button" target="_blank" href="<?php echo esc_url( $yt_link ); ?>">Continue Reading</a>
+          <?php endif; ?>
+
+          <?php 
+          $fb_link = get_field('facebook_sm');
+          if( $fb_link ): ?>
+              <a class="button" target="_blank" href="<?php echo esc_url( $fb_link ); ?>">Continue Reading</a>
+          <?php endif; ?>
+
+        </div>  
+        </div>     
       </div>
       <div class="row">
 

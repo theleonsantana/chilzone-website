@@ -15,6 +15,10 @@ function web3_enqueues()
     wp_register_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), '4.0.0', 'all');
     wp_enqueue_style('bootstrap-css');
 
+    /**Font Awesome*/
+    wp_register_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css', array(), '5.12.1', 'all');
+    wp_enqueue_style('font-awesome');
+
     /**
      * I'm registering and enqueuing my custom stylesheet
      * get_stylesheet_directory_uri() points to the theme folder
