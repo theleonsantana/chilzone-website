@@ -28,6 +28,7 @@ Version:        0.0.1
   text-align: center; }
 
 .logo-container {
+  width: 50%;
   margin: 0 auto;
   background: linear-gradient(-45deg, #fc1684, #2766fb, #b22ef9, #fc1684);
   background-size: 400% 400%;
@@ -36,6 +37,9 @@ Version:        0.0.1
   animation: Gradient 5s ease infinite; }
   .logo-container img {
     width: 100%; }
+  @media only screen and (max-width: 320px) {
+    .logo-container {
+      width: 80%; } }
 
 @-webkit-keyframes Gradient {
   0% {
