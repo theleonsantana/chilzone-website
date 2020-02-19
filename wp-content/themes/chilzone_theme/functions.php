@@ -32,6 +32,8 @@ function web3_enqueues()
     wp_register_script('popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '1.12.9', true);
     wp_enqueue_script('popper-js');
     wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery', 'popper'), '4.0.0', true);
+    wp_register_script( 'toggle-menu', get_template_directory_uri() . '/js/mobile-navigation.js', array('jquery'), '20200212', true );
+    wp_enqueue_script('toggle-menu');
 
 }
 

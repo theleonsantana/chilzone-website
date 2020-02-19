@@ -10,6 +10,9 @@
 	.items-container {
 		margin: 5% 0 10%;
 		display: flex;
+		@include respond-to(handhelds) {
+			flex-flow: column nowrap;
+		}
 		img {
 			// background-color: red;
 			justify-content: center;

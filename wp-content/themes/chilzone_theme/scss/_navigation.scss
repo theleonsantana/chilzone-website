@@ -44,3 +44,37 @@ body.page .main-navigation {
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
+
+//
+// Mobile menu styles
+//
+
+/* Navigation Menu */
+.main-mobile-navigation {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	text-align: center;
+}
+.main-mobile-navigation li {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 1.42857143;
+}
+.main-mobile-navigation a {
+	color: #5e5e5e;
+}
+.main-mobile-navigation a:hover,
+.main-mobile-navigation a:focus {
+	color: #21759b;
+}
+.main-mobile-navigation ul.mobile-nav-menu,
+.main-mobile-navigation div.mobile-nav-menu > ul {
+	display: none;
+}
+
+.main-mobile-navigation ul.mobile-nav-menu.toggled-on,
+.menu-toggle {
+	display: inline-block;
+}

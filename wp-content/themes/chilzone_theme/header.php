@@ -29,16 +29,27 @@
                     </div>
 					<!-- /logo -->
 
-					<!-- nav -->
-                    <nav id="site-navigation" class="main-navigation">
-                        <?php
-                        wp_nav_menu( array(
-                            'theme_location'  => 'primary',
-                            'menu_class'     => 'main-menu',
-                        ))
-                        ?>
-                    </nav>
-					<!-- /nav -->
+					<!-- desktop nav -->
+          <nav id="site-navigation" class="main-navigation d-none d-sm-block">
+              <?php
+              wp_nav_menu( array(
+                  'theme_location'  => 'primary',
+                  'menu_class'     => 'main-menu',
+              ))
+              ?>
+          </nav>
+          <!-- /nav -->
+          
+          <!-- mobile nav -->
+          <nav id="mobile-navigation" class="main-mobile-navigation d-block d-sm-none">
+
+            <button class="menu-toggle">Icon Here</button>
+
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'mobile-nav-menu' ) ); ?>
+          
+          </nav>
+          <!-- end of mobile nav -->
+
 
 			</header>
 			<!-- /header -->
