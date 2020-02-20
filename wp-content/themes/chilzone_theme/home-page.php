@@ -8,8 +8,8 @@
         $hero_image = get_field('hero_background_image');
         if( $hero_image ): ?>
             <div id="hero-image" style="background-image: url('<?php echo esc_url( $hero_image['url'] ); ?>')">  
-                <div class="container">
-                    <div class="row">
+                <div class="container h-100">
+                    <div class="row align-items-end h-100">
                     <div class="col-sm-5 helper-position">
                         <?php
                         $hero_btn = get_field('hero_button')
