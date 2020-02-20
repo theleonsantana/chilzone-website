@@ -116,7 +116,7 @@ body.page .main-navigation {
   line-height: 1.42857143; }
 
 .main-mobile-navigation a {
-  color: #5e5e5e; }
+  color: white; }
 
 .main-mobile-navigation a:hover,
 .main-mobile-navigation a:focus {
@@ -128,7 +128,21 @@ body.page .main-navigation {
 
 .main-mobile-navigation ul.mobile-nav-menu.toggled-on,
 .menu-toggle {
-  display: inline-block; }
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #8f39bc !important;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px; }
+
+.mm-helper {
+  padding-right: 0;
+  padding-left: 0; }
+
+.main-mobile-navigation .menu-main-menu-container {
+  background-color: #8f39bc; }
 
 body {
   margin: 0;
@@ -205,9 +219,7 @@ h5 {
     #hero-image .helper-position .hero-container {
       font-family: 'Nunito', sans-serif;
       background-color: rgba(255, 255, 255, 0.4);
-      position: absolute;
-      padding: 1.7em;
-      transform: translateY(80%);
+      padding: 20px;
       border-radius: 0px 40px 0px 40px; }
       #hero-image .helper-position .hero-container .headline {
         text-transform: uppercase;
@@ -235,7 +247,7 @@ h5 {
   margin: 10% 0; }
   .home-quote-container .home-quote, .home-quote-container .quote-cite {
     font-family: 'Catamaran', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.7em; }
   .home-quote-container .quote-cite {
     text-align: right; }
@@ -405,10 +417,19 @@ h5 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center; }
+    @media only screen and (max-width: 574px) {
+      .footer .logo-footer-container {
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center; } }
     .footer .logo-footer-container img {
       width: auto;
       height: 100px;
       margin: 20px; }
+      @media only screen and (max-width: 574px) {
+        .footer .logo-footer-container img {
+          width: 140px;
+          height: auto; } }
   .footer .branding-footer {
     display: flex;
     display: -webkit-flex;

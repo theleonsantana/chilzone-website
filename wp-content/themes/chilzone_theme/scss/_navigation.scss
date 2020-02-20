@@ -63,7 +63,7 @@ body.page .main-navigation {
 	line-height: 1.42857143;
 }
 .main-mobile-navigation a {
-	color: #5e5e5e;
+	color: white;
 }
 .main-mobile-navigation a:hover,
 .main-mobile-navigation a:focus {
@@ -76,5 +76,23 @@ body.page .main-navigation {
 
 .main-mobile-navigation ul.mobile-nav-menu.toggled-on,
 .menu-toggle {
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $purple !important;
 	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.mm-helper {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.main-mobile-navigation {
+	.menu-main-menu-container {
+		background-color: $purple;
+	}
 }

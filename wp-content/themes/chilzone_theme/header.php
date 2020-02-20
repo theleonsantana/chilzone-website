@@ -39,18 +39,21 @@
               ?>
           </nav>
           <!-- /nav -->
-          
-          <!-- mobile nav -->
-          <nav id="mobile-navigation" class="main-mobile-navigation d-block d-sm-none">
-
-            <button class="menu-toggle">Icon Here</button>
-
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'mobile-nav-menu' ) ); ?>
-          
-          </nav>
-          <!-- end of mobile nav -->
-
-
 			</header>
 			<!-- /header -->
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 mm-helper">
+        <!-- mobile nav -->
+        <nav id="mobile-navigation" class="main-mobile-navigation d-block d-sm-none">
+
+          <a class="menu-toggle">Menu</a>
+
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'mobile-nav-menu' ) ); ?>
+
+        </nav>
         </div>
+        <!-- end of mobile nav -->
+      </div>
+    </div>
