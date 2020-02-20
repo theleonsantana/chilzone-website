@@ -135,7 +135,8 @@ body.page .main-navigation {
   display: inline-block;
   list-style: none;
   padding: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border: none; }
 
 .mm-helper {
   padding-right: 0;
