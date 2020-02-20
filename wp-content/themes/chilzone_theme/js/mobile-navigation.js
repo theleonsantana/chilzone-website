@@ -6,7 +6,7 @@
 		return;
 	}
 
-	button = nav.getElementsByTagName('a')[0];
+	button = nav.getElementsByTagName('button')[0];
 	menu = nav.getElementsByTagName('ul')[0];
 	if (!button) {
 		return;
