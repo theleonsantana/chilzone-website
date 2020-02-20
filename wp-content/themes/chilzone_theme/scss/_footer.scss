@@ -61,52 +61,14 @@
 .footer {
 	background-color: $purple;
 	padding: 20px 0;
-	.footer-logo-container {
-		flex-wrap: wrap;
-		text-align: center;
+	.logo-footer-container {
+		display: flex;
+		flex-flow: row nowrap;
 		justify-content: center;
 		img {
-			width: 50%;
-		}
-		.recent-post-container {
-			margin: 30px;
-			color: white;
-			height: calc(100% - 120px);
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-			.recent-post {
-				font-family: 'Roboto', sans-serif;
-				border-bottom: 1px solid white;
-				padding-bottom: 10px;
-				text-align: left;
-				.recent-post-date {
-					font-style: italic;
-					font-size: 0.7em;
-					margin-bottom: 0;
-					padding-bottom: 10px;
-				}
-				.recent-post-title {
-					font-size: 1.2em;
-				}
-				p {
-					font-size: 0.8em;
-				}
-				.recent-post-link-more {
-					color: white;
-					text-decoration: underline;
-					&:hover {
-						color: $cz-blue;
-					}
-				}
-				.no-post-message {
-					margin: 20px 0px;
-					color: white;
-				}
-			}
-			// .recent-post:last-child {
-			// 	border-bottom: none;
-			// }
+			width: auto;
+			height: 100px;
+			margin: 20px;
 		}
 	}
 	.branding-footer {
