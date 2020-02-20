@@ -275,14 +275,31 @@ h5 {
   width: 100%;
   position: absolute;
   margin: 100px 0 -15px; }
+  @media only screen and (max-width: 574px) {
+    .upper-shape {
+      display: none; } }
+
+@media only screen and (max-width: 574px) {
+  .upper-shape-mobile {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px; } }
 
 .our-vision-container {
   margin-top: 10%;
   padding-right: 0;
   padding-left: 0; }
+  @media only screen and (max-width: 574px) {
+    .our-vision-container .our-vision {
+      margin-top: 100px; } }
   .our-vision-container .our-vision img {
     width: 100%;
     margin: 10% 0 5%; }
+    @media only screen and (max-width: 574px) {
+      .our-vision-container .our-vision img {
+        position: relative;
+        width: 80%;
+        margin: 0; } }
   .our-vision-container .our-vision h3 {
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
@@ -298,6 +315,10 @@ h5 {
   z-index: 1;
   width: 100%;
   margin: -373px 0 -15px; }
+  @media only screen and (max-width: 574px) {
+    .lower-shape {
+      position: relative;
+      margin: -124px 0 -15px; } }
 
 .flavor-image-container .flavor-image {
   width: 100%;

@@ -2,6 +2,17 @@
 	width: 100%;
 	position: absolute;
 	margin: 100px 0 -15px;
+	@include respond-to(handhelds) {
+		display: none;
+	}
+}
+
+.upper-shape-mobile {
+	@include respond-to(handhelds) {
+		position: absolute;
+		width: 100%;
+		margin-top: 50px;
+	}
 }
 
 .our-vision-container {
@@ -9,9 +20,17 @@
 	padding-right: 0;
 	padding-left: 0;
 	.our-vision {
+		@include respond-to(handhelds) {
+			margin-top: 100px;
+		}
 		img {
 			width: 100%;
 			margin: 10% 0 5%;
+			@include respond-to(handhelds) {
+				position: relative;
+				width: 80%;
+				margin: 0;
+			}
 		}
 		h3 {
 			font-family: 'Catamaran', sans-serif;
@@ -32,4 +51,8 @@
 	z-index: 1;
 	width: 100%;
 	margin: -373px 0 -15px;
+	@include respond-to(handhelds) {
+		position: relative;
+		margin: -124px 0 -15px;
+	}
 }

@@ -50,6 +50,7 @@
         </div>
     </div>
 </div>
+<img class="upper-shape-mobile d-block d-sm-none" src="<?php bloginfo('stylesheet_directory')?>/images/Artboard1.svg" alt="">
 <img class="upper-shape" src="<?php bloginfo('stylesheet_directory')?>/images/Rectangle8.svg" alt=""/>
 <div class="container-fluid our-vision-container">
     <div class="container  h-100 our-vision">
