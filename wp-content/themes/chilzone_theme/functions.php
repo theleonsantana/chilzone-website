@@ -82,3 +82,91 @@ function wp_excerpt_length( $length ) {
   return 30;
 }
 add_filter( 'excerpt_length', 'wp_excerpt_length');
+
+/*
+* Creating a function to create our CPT
+*/
+ 
+function artist_post_type() {
+ 
+  // Set UI labels for Custom Post Type
+      $labels = array(
+          'name'                => _x( 'Artist', 'Post Type General Name', 'twentytwenty' ),
+          'singular_name'       => _x( 'Artist', 'Post Type Singular Name', 'twentytwenty' ),
+          'menu_name'           => __( 'Artists Post', 'twentytwenty' ),
+      );
+       
+  // Set other options for Custom Post Type
+       
+      $args = array(
+          'label'               => __( 'artist', 'twentytwenty' ),
+          'description'         => __( 'Custom post type for Artists page', 'twentytwenty' ),
+          'labels'              => $labels,
+          // Features this CPT supports in Post Editor
+          'supports'            => array( 'title', 'editor', 'revisions', 'custom-fields', ),
+          // You can associate this CPT with a taxonomy or custom taxonomy. 
+          'taxonomies'          => array( 'genres' ),
+          /* A hierarchical CPT is like Pages and can have
+          * Parent and child items. A non-hierarchical CPT
+          * is like Posts.
+          */ 
+          'menu_position'       => 5,
+          'public' => true,
+          'has_archive' => true,
+          'rewrite' => array('slug' => 'artists'),
+          'show_in_rest' => true,
+      );
+       
+      // Registering your Custom Post Type
+      register_post_type( 'artist', $args );
+   
+  }
+   
+  /* Hook into the 'init' action so that the function
+  * Containing our post type registration is not 
+  * unnecessarily executed. 
+  */
+   
+  add_action( 'init', 'artist_post_type', 0 );
+
+  function tech_post_type() {
+ 
+    // Set UI labels for Custom Post Type
+        $labels = array(
+            'name'                => _x( 'Technology', 'Post Type General Name', 'twentytwenty' ),
+            'singular_name'       => _x( 'Technologies', 'Post Type Singular Name', 'twentytwenty' ),
+            'menu_name'           => __( 'Technologies Post', 'twentytwenty' ),
+        );
+         
+    // Set other options for Custom Post Type
+         
+        $args = array(
+            'label'               => __( 'technology', 'twentytwenty' ),
+            'description'         => __( 'Custom post type for Technologies page', 'twentytwenty' ),
+            'labels'              => $labels,
+            // Features this CPT supports in Post Editor
+            'supports'            => array( 'title', 'editor', 'revisions', 'custom-fields', ),
+            // You can associate this CPT with a taxonomy or custom taxonomy. 
+            'taxonomies'          => array( 'genres' ),
+            /* A hierarchical CPT is like Pages and can have
+            * Parent and child items. A non-hierarchical CPT
+            * is like Posts.
+            */ 
+            'menu_position'       => 6,
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'technologiess'),
+            'show_in_rest' => true,
+        );
+         
+        // Registering your Custom Post Type
+        register_post_type( 'technology', $args );
+     
+    }
+     
+    /* Hook into the 'init' action so that the function
+    * Containing our post type registration is not 
+    * unnecessarily executed. 
+    */
+     
+    add_action( 'init', 'tech_post_type', 0 );
