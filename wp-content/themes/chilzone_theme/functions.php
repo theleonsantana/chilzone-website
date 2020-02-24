@@ -145,7 +145,7 @@ function artist_post_type() {
             'description'         => __( 'Custom post type for Technologies page', 'twentytwenty' ),
             'labels'              => $labels,
             // Features this CPT supports in Post Editor
-            'supports'            => array( 'title', 'editor', 'revisions', 'custom-fields', ),
+            'supports'            => array( 'title', 'editor', 'revisions' ),
             // You can associate this CPT with a taxonomy or custom taxonomy. 
             'taxonomies'          => array( 'genres' ),
             /* A hierarchical CPT is like Pages and can have
