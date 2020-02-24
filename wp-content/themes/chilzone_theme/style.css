@@ -390,6 +390,10 @@ h5 {
   .mid-banner-section #mid-banner .btn-style:hover {
     background-color: #ec4f30; }
 
+@media only screen and (max-width: 574px) {
+  .mid-banner-mobile #mid-banner-mobile {
+    background-repeat: no-repeat;
+    background-size: contain; } }
 .partners-section {
   margin: 10% 0; }
   .partners-section h3 {

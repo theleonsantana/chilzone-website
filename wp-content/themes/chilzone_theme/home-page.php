@@ -143,7 +143,7 @@
           </div>
         </div>
     </div>
-    <div class="row mid-banner-section">
+    <div class="row mid-banner-section d-none d-sm-block">
         <?php
         $mid_banner_img = get_field('mid_banner_image');
         $mid_banner_headline = get_field('mid_headline');
@@ -166,6 +166,27 @@
             </div>
         <?php endif; ?>
     </div>
+    
+    <div class="row mid-banner-mobile d-block d-sm-none">
+      <?php if( $mid_banner_img ): ?>
+          <div id="mid-banner-mobile" style="background-image: url('<?php echo esc_url( $mid_banner_img['url'] ); ?>'); height: <?php echo $mid_banner_img['sizes']['medium_large-height'] ?>px;">  
+          </div>
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-sm-5 helper-position">
+                  
+                <h4 class="tagline"><?php echo $mid_banner_headline;?></h4>
+                <p class="hero-content"><?php echo $mid_banner_content; ?></p>
+                <a class="btn-style" href="<?php echo esc_url( $mid_banner_button );?>">Read More</a>
+                  
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+
+    </div>
+
+
     <div class="row partners-section">
         <div class="col-sm-12">
             <h3>Partners</h3>    
