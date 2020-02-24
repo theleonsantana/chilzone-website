@@ -169,9 +169,9 @@
     
     <div class="row mid-banner-mobile d-block d-sm-none">
       <?php if( $mid_banner_img ): ?>
-          <div class="container-fluid remove-padding">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-12 remove-padding">
                   <img id="mid-banner-mobile" src="<?php echo esc_url( $mid_banner_img['url'] ); ?>"/>  
               </div>
             </div>

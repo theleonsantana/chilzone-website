@@ -410,7 +410,8 @@ h5 {
 
 @media only screen and (max-width: 574px) {
   .mid-banner-mobile .remove-padding {
-    padding: 0 0; }
+    padding-right: 0;
+    padding-left: 0; }
   .mid-banner-mobile #mid-banner-mobile {
     width: 100%; }
   .mid-banner-mobile .mid-banner-mobile-container {
