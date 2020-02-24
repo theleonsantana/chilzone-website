@@ -393,7 +393,30 @@ h5 {
 @media only screen and (max-width: 574px) {
   .mid-banner-mobile #mid-banner-mobile {
     background-repeat: no-repeat;
-    background-size: contain; } }
+    background-size: contain;
+    height: 38vh;
+    background-color: #e1db3d; }
+  .mid-banner-mobile .mid-banner-mobile-container {
+    background-color: #e1db3d;
+    padding-bottom: 20px;
+    text-align: center; }
+    .mid-banner-mobile .mid-banner-mobile-container h4 {
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-transform: uppercase; }
+    .mid-banner-mobile .mid-banner-mobile-container .btn-style {
+      background-color: transparent;
+      /* Green */
+      border: 4px solid #8f39bc;
+      color: #8f39bc;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      text-transform: uppercase;
+      border-radius: 50px; } }
 .partners-section {
   margin: 10% 0; }
   .partners-section h3 {
