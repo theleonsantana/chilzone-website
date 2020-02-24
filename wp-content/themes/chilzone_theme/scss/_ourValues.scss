@@ -6,6 +6,9 @@
 		font-size: 2em;
 		text-align: center;
 		text-transform: uppercase;
+		@include respond-to(handhelds) {
+			font-size: 1.6em;
+		}
 	}
 	.items-container {
 		margin: 5% 0 10%;

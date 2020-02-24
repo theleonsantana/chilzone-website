@@ -35,15 +35,15 @@
 
 @include respond-to(handhelds) {
 	.mid-banner-mobile {
+		.remove-padding {
+			padding: 0 0;
+		}
 		#mid-banner-mobile {
-			background-repeat: no-repeat;
-			background-size: contain;
-			height: 38vh;
-			background-color: $yellow;
+			width: 100%;
 		}
 		.mid-banner-mobile-container {
 			background-color: $yellow;
-			padding-bottom: 20px;
+			padding: 20px 0;
 			text-align: center;
 			h4 {
 				font-family: 'Catamaran', sans-serif;

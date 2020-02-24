@@ -169,12 +169,17 @@
     
     <div class="row mid-banner-mobile d-block d-sm-none">
       <?php if( $mid_banner_img ): ?>
-          <div id="mid-banner-mobile" style="background-image: url('<?php echo esc_url( $mid_banner_img['url'] ); ?>');">  
+          <div class="container-fluid remove-padding">
+            <div class="row">
+              <div class="col-sm-12">
+                  <img id="mid-banner-mobile" src="<?php echo esc_url( $mid_banner_img['url'] ); ?>"/>  
+              </div>
+            </div>
           </div>
           <div class="container">
             <div class="row mid-banner-mobile-container">
               <div class="col-sm-5">
-                  
+      
                 <h4 class="tagline"><?php echo $mid_banner_headline;?></h4>
                 <p class="hero-content"><?php echo $mid_banner_content; ?></p>
                 <a class="btn-style" href="<?php echo esc_url( $mid_banner_button );?>">Read More</a>

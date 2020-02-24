@@ -38,6 +38,9 @@
 			font-size: 2em;
 			text-align: center;
 			text-transform: uppercase;
+			@include respond-to(handhelds) {
+				font-size: 1.6em;
+			}
 		}
 		p {
 			font-size: 1.2em;

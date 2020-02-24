@@ -10,5 +10,8 @@
 		font-style: italic;
 		color: $quote-grey;
 		text-align: right;
+		@include respond-to(handhelds) {
+			font-size: 0.9em;
+		}
 	}
 }

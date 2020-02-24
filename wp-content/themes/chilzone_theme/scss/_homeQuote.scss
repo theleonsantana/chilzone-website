@@ -4,6 +4,9 @@
 		font-family: 'Catamaran', sans-serif;
 		font-weight: 500;
 		font-size: 1.7em;
+		@include respond-to(handhelds) {
+			font-size: 1.3em;
+		}
 	}
 	.quote-cite {
 		@extend .home-quote;
