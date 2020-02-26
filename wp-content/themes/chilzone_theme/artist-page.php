@@ -24,19 +24,20 @@
         </div>       
       <?php endif; ?>
   </div>
-
-  <div class="row">
-    <h2 class="col-sm-8 artist-heading"><?php the_title(); ?></h2>
-    <div class="artist-entry col-sm-8">
-      <?php the_content(); ?>
-    </div>  
-  </div>
+  <div class="artist-quote-wrapper">
+    <div class="module">
+    <div class="row">
+      <h2 class="col-sm-8 artist-heading"><?php the_title(); ?></h2>
+      <div class="artist-entry col-sm-8">
+        <?php the_content(); ?>
+      </div>  
+    </div>
 
 <?php $art_quote = get_field('artist_quote', false, false);
       $art_photo = get_field('artist_photo');
       if($art_quote): ?>
-  <div class="artist-quote-wrapper">
-    <div class="module d-flex flex-row justify-content-end">
+  
+    <div class="d-flex flex-row justify-content-end">
       <div class="col-sm-5">         
         <p class="quote">
             "<?php echo $art_quote?>"
@@ -49,14 +50,16 @@
   </div>
 
 <?php endif;?>
-  
+    
+    </div>
   <div class="artist-separator"></div>
+</div>
 </div>
 
 <?php wp_reset_postdata(); ?>
 <?php endwhile; ?>
 
-  <?php else : ?>
+<?php else : ?>
 
 
   <div class="container">

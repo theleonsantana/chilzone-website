@@ -25,6 +25,8 @@
       <?php endif; ?>
   </div>
 
+<div class="artist-quote-wrapper">
+  <div class="module">
   <div class="row">
     <h2 class="col-sm-8 artist-heading"><?php the_title(); ?></h2>
     <div class="artist-entry col-sm-8">
@@ -35,17 +37,21 @@
   <?php $patient_quote = get_field('patient_quote', false, false);
         $patient_photo = get_field('patient_photo');
         if($art_quote): ?>
-    <div class="artist-quote-wrapper">
-      <div class="module d-flex flex-row justify-content-end">
+    
+      <div class="d-flex flex-row justify-content-end">
         <div class="col-sm-5">         
           <p class="quote">"<?php echo $patient_quote?>"</p>
         </div>
+        
         <img class="artist-photo"  src="<?php echo esc_url( $patient_photo['url'] ); ?>" alt="<?php echo esc_attr( $patient_photo['alt'] ); ?>"/>
+      
       </div>
     </div>
   
 <?php endif;?>
 
+    </div>
+  </div>
   <div class="artist-separator"></div>
 </div>
 
