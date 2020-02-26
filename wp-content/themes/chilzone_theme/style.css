@@ -486,6 +486,10 @@ h5 {
 .artist-entry {
   font-size: 1.2em;
   line-height: 30px; }
+  @media only screen and (max-width: 574px) {
+    .artist-entry {
+      font-size: 1em;
+      line-height: 25px; } }
 
 .artist-quote-wrapper {
   margin: 30px 0;
@@ -496,13 +500,25 @@ h5 {
   .artist-quote-wrapper .module {
     background: white;
     padding: 2rem; }
-  .artist-quote-wrapper .quote {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    text-align: right; }
-  .artist-quote-wrapper .artist-photo {
-    width: 150px; }
+
+@media only screen and (max-width: 574px) {
+  .quote-mobile-view {
+    justify-content: center !important;
+    flex-direction: column !important; } }
+.quote-mobile-view .quote {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: right;
+  color: #3d3d3d; }
+  @media only screen and (max-width: 574px) {
+    .quote-mobile-view .quote {
+      text-align: center; } }
+.quote-mobile-view .artist-photo {
+  width: 150px; }
+  @media only screen and (max-width: 574px) {
+    .quote-mobile-view .artist-photo {
+      margin: 0 auto; } }
 
 .artist-separator {
   width: 100%;

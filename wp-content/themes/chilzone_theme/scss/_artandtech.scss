@@ -38,6 +38,10 @@
 .artist-entry {
 	font-size: 1.2em;
 	line-height: 30px;
+	@include respond-to(handhelds) {
+		font-size: 1em;
+		line-height: 25px;
+	}
 }
 
 .artist-quote-wrapper {
@@ -51,14 +55,27 @@
 		background: white;
 		padding: 2rem;
 	}
+}
+.quote-mobile-view {
+	@include respond-to(handhelds) {
+		justify-content: center !important;
+		flex-direction: column !important;
+	}
 	.quote {
 		font-family: 'Catamaran', sans-serif;
 		font-weight: 500;
 		font-size: 1em;
 		text-align: right;
+		color: rgb(61, 61, 61);
+		@include respond-to(handhelds) {
+			text-align: center;
+		}
 	}
 	.artist-photo {
 		width: 150px;
+		@include respond-to(handhelds) {
+			margin: 0 auto;
+		}
 	}
 }
 

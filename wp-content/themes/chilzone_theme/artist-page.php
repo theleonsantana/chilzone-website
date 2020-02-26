@@ -37,7 +37,7 @@
       $art_photo = get_field('artist_photo');
       if($art_quote): ?>
   
-    <div class="d-flex flex-row justify-content-end">
+    <div class="d-flex flex-row justify-content-end quote-mobile-view">
       <div class="col-sm-5">         
         <p class="quote">
             "<?php echo $art_quote?>"
@@ -53,7 +53,6 @@
     
     </div>
   <div class="artist-separator"></div>
-</div>
 </div>
 
 <?php wp_reset_postdata(); ?>
