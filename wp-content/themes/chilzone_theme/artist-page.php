@@ -2,14 +2,16 @@
 
 <?php get_header();?>
 
-<?php $args = array( 'post_type' => 'Artist', 'posts_per_page' => 10 );
+<?php $args = array( 'post_type' => 'Artist', 'posts_per_page' => 10, 'order' => 'ASC' );
       $the_query = new WP_Query( $args ); ?>
 
 <div class="container">
   <h2 class="page-heading">Our Artists</h2>
+</div>
 
 <?php if ( $the_query->have_posts() ) : ?>
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+<div class="container">
   <div class="row">
       <?php $art_image = get_field('artist_experience_image');  
       if (!$art_image) : ?>
@@ -45,14 +47,14 @@
 
     </div>
   </div>
+  <div class="artist-separator"></div>
 </div>
-    <?php endif;?>
-    <?php wp_reset_postdata(); ?>
-  </div>
-</div>
-  <?php endwhile; ?>
+<?php endif;?>
+<?php wp_reset_postdata(); ?>
+<?php endwhile; ?>
+
   <?php else : ?>
-</div>
+
 
   <div class="container">
     <div class="row">
