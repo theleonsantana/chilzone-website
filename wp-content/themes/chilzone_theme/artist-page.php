@@ -47,9 +47,12 @@
 
     </div>
   </div>
+
+<?php endif;?>
+  
   <div class="artist-separator"></div>
 </div>
-<?php endif;?>
+
 <?php wp_reset_postdata(); ?>
 <?php endwhile; ?>
 
