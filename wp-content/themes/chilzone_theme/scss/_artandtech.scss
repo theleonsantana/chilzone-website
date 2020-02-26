@@ -14,3 +14,43 @@
 		height: 100%;
 	}
 }
+
+.page-heading {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 900;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 25px 0;
+}
+
+.artist-heading {
+	@extend .page-heading;
+	text-align: left;
+}
+
+.artist-entry {
+	font-size: 1.2em;
+	line-height: 30px;
+}
+
+.artist-quote-wrapper {
+	// max-width: 250px;
+	margin: 30px 0;
+	padding: 1rem;
+	position: relative;
+	background: linear-gradient(to right, $cz-blue, $purple);
+	padding: 3px;
+	.module {
+		background: white;
+		padding: 2rem;
+	}
+	.quote {
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 500;
+		font-size: 1em;
+	}
+	.artist-photo {
+		width: 150px;
+	}
+}
