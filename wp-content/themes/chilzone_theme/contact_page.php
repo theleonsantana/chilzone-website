@@ -2,6 +2,8 @@
 
 <?php get_header();?>
 
+<?php wp_head(); ?>
+
 <div class="row justify-content-center">
   <div class="col-sm-6">
 
@@ -11,5 +13,7 @@
     ?>
   </div>
 </div>
+
+<?php wp_footer(); ?>
 
 <?php get_footer();?>
