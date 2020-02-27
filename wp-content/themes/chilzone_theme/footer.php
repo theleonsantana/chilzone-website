@@ -17,10 +17,10 @@
       <div class="row justify-content-center">
         <div class="col-sm-6">
 
-          <h3 class="footer-heading">Contact Us!</h3>
-          <?php
-          echo do_shortcode( '[ninja_form id=1]' );
-          ?>
+          <!-- <h3 class="footer-heading">Contact Us!</h3>
+          # <?php 
+          # echo do_shortcode( '[ninja_form id=1]' );
+          # ?> -->
 
         <div class="social-media-section">
 
