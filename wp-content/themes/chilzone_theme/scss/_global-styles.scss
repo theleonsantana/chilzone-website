@@ -82,3 +82,8 @@ h5 {
 	width: 100%;
 	height: auto;
 }
+
+.pum-theme-341 .pum-content + .pum-close,
+.pum-theme-default-theme .pum-content + .pum-close {
+	right: 300px;
+}
