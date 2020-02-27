@@ -37,6 +37,7 @@
                   'menu_class'     => 'main-menu',
               ))
               ?>
+              <button class="nf-my-popup" >Button Text</button>
           </nav>
           <!-- /nav -->
 			</header>
