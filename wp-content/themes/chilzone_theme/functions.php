@@ -170,3 +170,19 @@ function artist_post_type() {
     */
      
     add_action( 'init', 'tech_post_type', 0 );
+
+    function chilzone_nav_menu_link_attr($attr, $item, $args, $depth) {
+      # echo "<pre>".print_r($item, true)."</pre>";
+
+      if (in_array("modal-trigger", $item->classes)) {
+        // echo "<pre>".print_r($attr, true)."</pre>";
+        if(empty($attr["class"])) {
+          $attr["class"] = "";
+        }
+        $attr["class"] = "my-form-popup " . $attr["class"];
+      }
+
+      return $attr;
+
+    }
+    add_filter( "nav_menu_link_attributes", "chilzone_nav_menu_link_attr", 10, 4);
