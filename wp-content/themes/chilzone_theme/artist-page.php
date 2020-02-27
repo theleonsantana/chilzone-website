@@ -2,6 +2,7 @@
 
 <?php get_header();?>
 
+
 <?php $args = array( 'post_type' => 'Artist', 'posts_per_page' => 10, 'order' => 'ASC' );
       $the_query = new WP_Query( $args ); ?>
 
