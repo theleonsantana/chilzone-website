@@ -13,6 +13,8 @@
 <?php if ( $the_query->have_posts() ) : ?>
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 <div class="container">
+<div class="artist-quote-wrapper">
+  <div class="module">
   <div class="row">
       <?php $art_image = get_field('artist_experience_image');  
       if (!$art_image) : ?>
@@ -25,8 +27,7 @@
         </div>       
       <?php endif; ?>
   </div>
-  <div class="artist-quote-wrapper">
-    <div class="module">
+  
     <div class="row">
       <h2 class="col-sm-8 artist-heading"><?php the_title(); ?></h2>
       <div class="artist-entry col-sm-8">
